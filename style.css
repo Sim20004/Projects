@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+  body {
+    margin: 0;
+    background: #222;
+  }
+
+#title {
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 800px;
+  font-size: 4em;
+  position: relative;
+}
+
+#desc {
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 800px;
+  font-size: 1.5em;
+  position: relative;
+}
+
+.gallery {
+  position:absolute;
+  top:200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.item {
+  width: 45%;
+  text-align: center;
+  transition:0.2s;
+  transform-origin:center;
+}
+.item:hover {
+    transform: scale(0.9);
+    transform-origin:center;
+    transition:0.2s;
+}
+
+.build {
+    height: 330px;
+    width: 400px;
+}
+
+.build-caption {
+    font-size: 35px;
+}
+
+#bruteforcer {
+    background-image: url("Resources/Project Images/bruteforcer.png");
+}
+
+#clickergame {
+    background-image: url("Resources/Project Images/clickergame.png");
+}
+
+#qmgsmc {
+    background-image: url("Resources/Project Images/qmgsmc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ttd {
+    background-image: url("Resources/Project Images/ttd.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#a {
+    background-image: url("Resources/icon.png");
+}
+
+#phwebsite {
+    background-image: url("Resources/Project Images/phwebsite.png");
+      background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

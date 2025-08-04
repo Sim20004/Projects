@@ -1,0 +1,395 @@
+/* Shared button style for text scaling */
+button {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: normal;
+    overflow: hidden;
+    font-size: clamp(16px, 2.2vw, 32px);
+    padding: 20px;
+}
+
+/* Main page layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+}
+
+/* Toggle Infinity Button */
+/* Initially hide the elements */
+#toggleInfinity, #devPoints {
+    visibility: hidden;
+    top:10000%;
+
+}
+
+/* Other existing styles */
+#toggleInfinity {
+    position: absolute;
+    top: 0px;
+    right: 670px;
+    width: 175px;
+    height: 75px;
+    color: rgb(0, 60, 255);
+    background-color: rgb(43, 255, 0);
+    box-shadow: 0 0 40px white;
+    z-index: 1;
+    transition: 0.5s;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Initially hide the devPoints */
+#devPoints {
+    position: absolute;
+    top: 10px;
+    right: 100000000000px;
+    width: 250px;
+    height: 50px;
+    font-size: clamp(20px, 4vw, 20px);
+    color: rgb(43, 255, 0);
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgb(43, 255, 0);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    visibility: hidden; /* Initially hidden */
+    z-index: 0; /* Ensure it's on top if needed */
+}
+
+
+
+
+
+
+#toggleInfinity:hover {
+    background-color: aqua;
+    color: rgb(0, 2, 138);
+    cursor: pointer;
+    transform: scale(0.75);
+    transition: 0.5s;
+}
+
+#toggleInfinity:active {
+    transform: scale(0.95);
+    transition: transform 0.5s;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure overlay is on top */
+}
+
+#achievementPopup {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    border: 2px solid black; /* Black border around the popup */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 300px;
+    position: relative;
+    z-index: 1010; /* Ensure the popup is above the overlay */
+    width:300px;
+    height:300px;
+}
+
+#achievementTitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+#achievementStatus {
+    font-size: 60px;
+    color: white;
+    margin-top: 10px;
+}
+
+#closePopup {
+    position: absolute;
+    top: -25px;
+    right: -10px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#closePopup:hover {
+    color: red;
+}
+
+.cursor {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-image: url('cursor.png'); /* Start with cursor.png */
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 1000;
+    animation: moveCursor 0.5s forwards, clickAnimation 0.2s 0.5s forwards;
+    transition: all 0.1s ease;
+    background-size: cover;
+}
+
+@keyframes moveCursor {
+    to {
+        transform: translate(var(--target-x), var(--target-y));
+    }
+}
+
+@keyframes clickAnimation {
+    0% {
+        background-image: url('cursor.png');
+        transform: scale(1);
+    }
+    50% {
+        background-image: url('cursor2.png'); /* Switch to cursor2.png */
+        transform: scale(0.9);
+    }
+    100% {
+        background-image: url('cursor.png'); /* Stay on cursor2.png */
+        transform: scale(1)
+    }
+
+
+}
+
+
+
+
+#leftPanel {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 400px;
+    height: 490px;
+}
+
+#rectangle2 {
+    top: 175%;
+    right: -110%;
+    width: 390px;
+    height: 890px;
+    border: 3px solid white;
+    background-color: transparent;
+    position: absolute;
+}
+
+#autoClickerSpeed {
+    font-size: 50px;
+    position: absolute;
+    top: 268%;
+    left: 5%;
+    width: 380px;
+    height: 428px;
+    color: rgb(0, 60, 255);
+    background-color: rgb(43, 255, 0);
+    box-shadow: 0 0 40px white;
+    z-index: 1;
+    transition: 0.5s;
+    border: none;
+}
+
+#rebirth {
+    position: absolute;
+    top: 149%;
+    left: 105%;
+    width: 380px;
+    height: 428px;
+    font-size: clamp(35px, 4vw, 20px);
+    text-align: center;
+    color: rgb(0, 60, 255);
+    background-color: rgb(43, 255, 0);
+    box-shadow: 0 0 40px white;
+    z-index: 1;
+    transition: 0.5s;
+    border: none;
+}
+
+#rebirth:hover {
+    background-color: aqua;
+    color: rgb(0, 2, 138);
+    cursor: pointer;
+    transform: scale(0.75);
+    transition: 0.5s;
+}
+
+
+#autoClickerSpeed:hover {
+    background-color: aqua;
+    color: rgb(0, 2, 138);
+    cursor: pointer;
+    transform: scale(0.75);
+    transition: 0.5s;
+}
+
+#rectangle {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 390px;
+    height: 890px;
+    border: 3px solid white;
+    background-color: transparent;
+}
+
+#rays {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 75%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: spin 5s linear infinite;
+    opacity: 0.3;
+    margin-top: 60px;
+}
+
+#btn {
+    width:550px;
+    height: 350px;
+    padding: 40px 80px;
+    font-size: clamp(75px, 2.2vw, 32px);
+    color: rgb(0, 60, 255);
+    background-color: rgb(43, 255, 0);
+    top:25%;
+    left:36%;
+    box-shadow: 0 0 40px white;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    margin-top: 100px;
+    transition:0.5s;
+}
+
+
+
+#btn:active {
+    transform: scale(0.95);
+    transition: transform 0.5s;
+}
+
+#moreClicks {
+    font-size: clamp(50px, 2.2vw, 32px);
+    width: 380px;
+    height: 430px;
+    color: rgb(0, 60, 255);
+    background-color: rgb(43, 255, 0);
+    box-shadow: 0 0 40px white;
+    top: 102%;
+    right: 7%;
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s;
+    border: none;
+}
+
+#moreClicks:hover {
+    background-color: aqua;
+    color: rgb(0, 2, 138);
+    cursor: pointer;
+    transform: scale(0.75);
+    transition: 0.5s;
+}
+
+#yra {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    font-size: 47px;
+    color: white;
+    margin: 0;
+}
+
+#status {
+    position: absolute;
+    width:600px;
+    top: 2%;
+    left: 47%;
+    font-size: 45px;
+    margin: 0;
+    color:white
+}
+
+#autoClicker {
+    width: 380px;
+    height: 430px;
+    top: 51%;
+    right: -99%;
+    font-size: clamp(50px, 2.2vw, 32px);
+    color: rgb(0, 60, 255);
+    background-color: rgb(43, 255, 0);
+    box-shadow: 0 0 40px white;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    border: none;
+}
+
+#autoClicker:hover {
+    background-color: aqua;
+    color: rgb(0, 2, 138);
+    cursor: pointer;
+    transform: scale(0.75);
+    transition: 0.5s;
+}
+
+#text {
+    position: absolute;
+    top: 2%;
+    right: -88%;
+    font-size: 55px;
+    color: white;
+    margin: 0;
+}
+
+@keyframes spinRays {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}

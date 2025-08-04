@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+}
+
+#title1 {
+  position:absolute;
+  top:0px;
+}
+
+.gallery {
+  position:absolute;
+  top:150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+}
+
+
+.item {
+  width: 45%;
+  text-align: center;
+}
+
+.build {
+    height: 330px;
+    width: 400px;
+}
+
+.build-caption {
+    font-size: 20px;
+}
+
+.fixed-button:hover {
+     transform: scale(0.9);
+}
+
+.fixed-button:active {
+     transform: scale(0.8);
+}

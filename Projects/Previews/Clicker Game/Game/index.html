@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Spinning Rays</title>
+    <!-- Main desktop CSS -->
+<link rel="stylesheet" href="desktop.css">
+
+<!-- Mobile-only CSS -->
+<link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 768px)">
+</head>
+<body> 
+    <div id="leftPanel">
+        <div id="rectangle2"></div>
+        <button id="autoClickerSpeed">
+            AutoClicker<br>
+            Price: 500<br>
+            Current CPS: 1
+        </button>
+    </div>
+
+
+    
+    <p id="status">New Clicker!</p>
+    <p id="yra">You are a</p>
+
+    <div id="rectangle"></div>
+
+    <div class="wrapper">  
+        <img id="rays" src="rays.png" alt="Spinning Rays" />
+        <button id="btn">Click me</button>
+    </div>
+
+    <p id="text">Points: 0</p>  
+    <button id="rename">
+        Rename Click Button <br>
+        Price: 10000000
+    </button>
+
+    <button id="moreClicks">
+        More Points<br>
+        Price: 50<br>
+        Current PPC: 1
+    </button>
+
+    <div id="infinityGroup">
+        <button id="toggleInfinity">Toggle Infinity</button>
+        <textarea id="devPoints"></textarea>
+    </div>
+    
+
+    <button id="autoClicker">
+        AutoClicker<br>
+        Price: 1000
+    </button>
+
+    <button id="rebirth">
+        Rebirth <br>
+        Price: 1000000 <br>
+        Rebirths: 0 <br>
+        Current Multipler: 1x <br>
+        ⚠️WARNING! WILL RESET CLICKS⚠️
+    </button>
+        <script src="rebirth.js"></script>
+
+    
+
+        <div id="overlay" style="display: none;">
+            <div id="achievementPopup">
+                <div id="achievementTitle">You've Unlocked</div>
+                <div id="achievementStatus"></div>
+                <button id="closePopup">✖</button>
+            </div>
+        </div>
+        
+        
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

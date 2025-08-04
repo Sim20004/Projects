@@ -1,0 +1,124 @@
+body {
+    background-color: white;
+    
+}
+
+#qmgslogo {
+    bottom:-10px;
+    width: 150px;
+    height: 160px;
+    background-size: cover;
+    margin: 20px auto;
+    position: absolute;
+}
+
+
+#title {
+    position: absolute;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 20px;
+    right: 38%;
+    top:-25px;
+}
+
+#title2 {
+    position: absolute;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+    right: 21%;
+    top:45px;
+}
+
+#about {
+    background-image: url("grass.jpeg"); 
+    font-size:50px;
+    color: white;
+    background-size: cover;              
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    left: 210px;
+    top: 30%;
+    border: none;                     
+    cursor: pointer;   
+    transition:0.5s;                  
+}
+
+#upload {
+    position: absolute;
+    top: 0px;
+    left: 750px;
+    height:70px;
+}
+
+#about:hover {
+   transform: scale(0.9);
+    transition:0.5s;;
+}
+
+#about:active {
+   transform: scale(0.8);
+    transition:0.5s;
+}
+
+#howtojoin {
+    background-image: url("lodestone.jpeg"); 
+    font-size:50px;
+    color: white;
+    background-size: cover;              
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    left: 530px;
+    top: 30%;
+    border: none;                     
+    cursor: pointer;   
+    transition:0.5s;                  
+}
+
+#howtojoin:hover {
+   transform: scale(0.9);
+    transition:0.5s;;
+}
+
+#howtojoin:active {
+   transform: scale(0.8);
+    transition:0.5s;
+}
+
+#gallery {
+    background-image: url("itemframe.jpg"); 
+    font-size:50px;
+    color: white;
+    background-size: cover;              
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    left: 850px;
+    top: 30%;
+    border: none;                     
+    cursor: pointer;   
+    transition:0.5s;                  
+}
+
+#gallery:hover {
+   transform: scale(0.9);
+    transition:0.5s;
+}
+
+#gallery:active {
+   transform: scale(0.8);
+    transition:0.5s;
+}
+
+#disclaimer {
+    position: absolute;
+    font-size: 19px;
+    top: 83%;
+    left: 180px;
+}
+

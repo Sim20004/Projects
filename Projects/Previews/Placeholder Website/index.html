@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=800, user-scalable=no">
+
+    <title>Welcome!</title>
+    
+</head>
+<body>
+    <h1 id="main">Welcome to (what will soon be) my website! <br> <br> I am still working hard to get this up and running, so just hang on tight! <br><br> Also, enjoy this bouncing ball while you wait!</h1>
+  <div id="ball"></div>
+
+  <script>
+      const ball = document.getElementById('ball');
+    let x = 100;
+    let y = 100;
+    let dx = 9;
+    let dy = 9;
+    const ballSize = 50;
+
+    function randomColor() {
+      // Return a random hex color string
+      return '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+    }
+
+    function animate() {
+      const maxWidth = window.innerWidth;
+      const maxHeight = window.innerHeight;
+
+      x += dx;
+      y += dy;
+
+      let bounced = false;
+
+      if (x + ballSize >= maxWidth || x <= 0) {
+        dx = -dx;
+        bounced = true;
+      }
+      if (y + ballSize >= maxHeight || y <= 0) {
+        dy = -dy;
+        bounced = true;
+      }
+
+      if (bounced) {
+        const color = randomColor();
+        ball.style.backgroundColor = color;
+        ball.style.boxShadow = `0 0 15px ${color}`;
+      }
+
+      ball.style.left = x + 'px';
+      ball.style.top = y + 'px';
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+    
+</body>
+</html>

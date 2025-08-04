@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>Placeholder Website</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+    body {
+        margin: 0;
+        background: #222;
+    }
+
+
+
+    #back:hover {
+        scale:0.9;
+        transition:0.2s;
+    }
+
+    .fixed-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        height:50px;
+        width:150px;
+        font-size:19px;
+        z-index:100;
+        transition:0.2s;
+    }
+
+    #title {
+        position:absolute;
+        top:15px;
+        left:50px;
+        color: white;
+    }
+
+    #desc {
+        position:absolute;
+        color:white;
+        top:540px;
+        left:50px;
+    }
+
+  #download {
+        position:fixed;
+        bottom:20px;
+        right:340px;
+        padding: 10px 15px;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        height:50px;
+        width:50px;
+        font-size:19px;
+        z-index:100;
+        background-image: url("Resources/download.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition:0.2s;
+    }
+
+    #download:hover {
+        scale:0.9;
+        transition:0.2s;
+    }
+
+    #preview {
+        position: fixed;
+        bottom: 20px;
+        right: 180px;
+        padding: 10px 15px;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        height:50px;
+        width:150px;
+        font-size:19px;
+        z-index:100;
+        transition:0.2s;
+    }
+
+    #preview:hover {
+        scale:0.9;
+        transition:0.2s;
+    }
+
+</style>
+<a href="Projects/Previews/Placeholder Website/index.html" target="_blank">
+<button id="preview">Preview</button>
+</a>
+<a href="Projects/Downloads/Placeholder Website.zip" download>
+   <button id="download"></button>
+</a>
+   <button id="back" class="fixed-button" onclick="location.href='index.html'">Return Home</button>
+    <img src="Resources/Project Images/phwebsite.png" style="position:absolute; left: 50px; width: 70%; height: auto; display: block; padding-top: 100px;">
+    <h1 id="title">Placeholder Website</h1>
+<h2 id="desc">
+<br><br><br><br><br>
+This is a placeholder website, which you may have seen before this website was launched. It is a simple HTML/CSS/JS webpage that servers as a temporary page for before your website has been finished! It also includes a fun twist with a <br>ball that bounces around the screen!
+<br><br>
+</h2>
+</body> 
+</html>

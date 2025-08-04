@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>Clicker Game</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+    body {
+        margin: 0;
+        background: #222;
+    }
+
+
+
+    #back:hover {
+        scale:0.9;
+        transition:0.2s;
+    }
+
+    .fixed-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        height:50px;
+        width:150px;
+        font-size:19px;
+        z-index:100;
+        transition:0.2s;
+    }
+
+    #title {
+        position:absolute;
+        top:15px;
+        left:50px;
+        color: white;
+    }
+
+    #desc {
+        position:absolute;
+        color:white;
+        top:540px;
+        left:50px;
+    }
+      #download {
+        position:fixed;
+        bottom:20px;
+        right:340px;
+        padding: 10px 15px;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        height:50px;
+        width:50px;
+        font-size:19px;
+        z-index:100;
+        background-image: url("Resources/download.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition:0.2s;
+    }
+
+    #download:hover {
+        scale:0.9;
+        transition:0.2s;
+    }
+
+    #preview {
+        position: fixed;
+        bottom: 20px;
+        right: 180px;
+        padding: 10px 15px;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        height:50px;
+        width:150px;
+        font-size:19px;
+        z-index:100;
+        transition:0.2s;
+    }
+
+    #preview:hover {
+        scale:0.9;
+        transition:0.2s;
+    }
+
+</style>
+<a href="Projects/Previews/Clicker Game/Game/index.html" target="_blank">
+<button id="preview">Preview</button>
+</a>
+<a href="Projects/Downloads/Clicker Game.zip" download>
+   <button id="download"></button>
+</a>
+   <button id="back" class="fixed-button" onclick="location.href='index.html'">Return Home</button>
+    <img src="Resources/Project Images/clickergame.png" style="position:absolute; left: 50px; width: 70%; height: auto; display: block; padding-top: 100px;">
+    <h1 id="title">Clicker Game</h1>
+<h2 id="desc">
+This project is a simple clicker game that simulates the experience of clicking to earn points. It is designed to be a fun and interactive game, easy to make and play!
+<br><br>
+How to play: <br>
+1. Click the button to earn points. <br>
+2. The points will increase with each click. <br>
+3. You can buy upgrades to increase your points per click. <br>
+4. You can also buy auto-clickers to earn points automatically over time. <br>
+5. You can rebirth, which will reset your points but give you a multiplier for future clicks. <br>
+6. You can spend a large amount of points to rename the button! <br>
+7. You can increase the autoclicker speed to earn points faster. <br>
+8. Gaining over a certain number of points will upgrade you to the next tier. <br>
+<br>
+With that being said, just play and have fun! <br><br>
+</h2>
+</body> 
+</html>

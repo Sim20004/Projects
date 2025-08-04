@@ -1,0 +1,90 @@
+body {
+    background-color:white;
+    
+}
+
+#java1 {
+    position: absolute;
+    top:115px;
+    left:15px;
+}
+
+#bedrock1 {
+    position: absolute;
+    top:115px;
+    left:406px;
+}
+
+
+#java {
+    position:absolute;
+    top:170px;
+    left: 15px;
+    font-size:18.7px
+}
+
+#bedrock {
+    position:absolute;
+    font-size: 19.6px;
+    left: 406px;
+    top: 170px;
+
+}
+
+
+#ontime {
+    position:absolute;
+    bottom:0px;
+
+}
+
+#box1 {
+    position: absolute;
+    top:130px;
+    width:380px;
+    height: 400px;
+    background: linear-gradient(peachpuff 20%, white 100%);
+    z-index: -1;
+}
+
+#box2 {
+    position: absolute;
+    top:130px;
+    left:400px;
+    width:380px;
+    height: 400px;
+    background: linear-gradient(peachpuff 20%, white 100%);
+    z-index: -1;
+}
+
+
+
+#logo1 {
+    position: absolute;
+    width: 400px;
+    height:440px;
+    left: 850px;
+    top: 70px;
+}
+
+#home {
+    position: absolute;
+      display: flex;
+  align-items: center;
+  justify-content: center;
+    top: 15px;
+    left: 190px;
+    background-color: azure;
+    color:black;
+    font-weight: bold;
+    width:100px;
+    height:50px;
+  font-size: 0.8em; 
+  padding: 0 10px;
+    transition:0.2s;
+    
+}
+
+#home:hover {
+  transform: scale(0.9);
+}

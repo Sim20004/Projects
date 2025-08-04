@@ -158,6 +158,16 @@
  <button onclick="location.href='comingsoon.html'" id="a" src="Resources/icon.png" class="build" style="width:500px; position:relative; z-index:2; height:500px;"></button>
   <p class="build-caption" style="position: relative; z-index: 3; color: white;">Coming Soon</p>
 </div>
-    
+    <script>
+function checkOrientation() {
+  if (window.innerHeight > window.innerWidth) {
+    alert("Please rotate your device to landscape mode.");
+  }
+}
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+</script>
+
 </body>
 </html>

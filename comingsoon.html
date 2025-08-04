@@ -45,5 +45,16 @@
 <button id="preview" onclick="location.href='ENTER'">Preview</button>
     <button onclick="location.href='index.html'" id="back"><strong>Back to Projects</strong></button>
     <h1 id="oops">This project is coming soon! <br>Have a look at the other ones that have already been published!</h1>
+    <script>
+function checkOrientation() {
+  if (window.innerHeight > window.innerWidth) {
+    alert("Please rotate your device to landscape mode.");
+  }
+}
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+</script>
+
 </body>
 </html>

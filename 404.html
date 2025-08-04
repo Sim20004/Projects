@@ -44,5 +44,16 @@
     </style>
     <button onclick="location.href='index.html'" id="back"><strong>Back to Projects</strong></button>
     <h1 id="oops">This page does not exist!<br>Have a look at the projects I have published by clicking Back to Projects.</h1>
+<script>
+function checkOrientation() {
+  if (window.innerHeight > window.innerWidth) {
+    alert("Please rotate your device to landscape mode.");
+  }
+}
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+</script>
+
 </body>
 </html>

@@ -114,5 +114,16 @@
 This is a website for a Minecraft server that I made a while ago (although it is no longer active). It was a fun project that allowed me to learn more about web development! This website also explained joining the server and the community. This website was never published. <br><br><br> 
 <br><br>
 </h2>
+<script>
+function checkOrientation() {
+  if (window.innerHeight > window.innerWidth) {
+    alert("Please rotate your device to landscape mode.");
+  }
+}
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+</script>
+
 </body> 
 </html>

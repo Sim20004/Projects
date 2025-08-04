@@ -124,5 +124,15 @@
   5. This program will NOT remotely run on a computer, ONLY on the local machine it is run on and other machines on the same network. <br><br>
   Please do not use or adapt this tool for real systems. Doing so may be illegal under the Computer Misuse Act 1990. <br><br>
   Unfortunately, you cannot preview this project as it is a batch file that runs on your local machine. However, you can download the files by clicking the download button next to the Return Home button.<br><br><br><br>
-</h2></body> 
+</h2> <script>
+function checkOrientation() {
+  if (window.innerHeight > window.innerWidth) {
+    alert("Please rotate your device to landscape mode.");
+  }
+}
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+</script>
+</body> 
 </html>

@@ -85,6 +85,13 @@
     background-position: center;
 }
 
+#encdec {
+    background-image: url("Resources/Project Images/encdec.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #a {
     background-image: url("Resources/icon.png");
 }

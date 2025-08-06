@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color:gray;
+    overflow:hidden;
+}
+
+#decryptor {
+    position:absolute;
+    top:120px;
+    left:870px;
+    transform:scale(1.9);
+    
+}
+
+#encryptor {
+    position: absolute;
+    top:120px;
+    left: 210px; 
+    transform:scale(1.9);
+}
+
+#submit {
+    transition:0.2s;
+}
+
+#submit:hover {
+    transform:scale(0.9);
+}
+
+#copyenc {
+    transition:0.2s;
+}
+
+#copyenc:hover {
+    transform:scale(0.9);
+}
+
+#submitdec {
+    transition:0.2s;
+}
+
+#submitdec:hover {
+    transform:scale(0.9);
+}
+
+#copydec {
+    transition:0.2s;
+}
+
+#copydec:hover {
+    transform:scale(0.9);
+}
+
+#line {
+    position:absolute;
+    top:-100px;
+    left:600px;
+    width:10px;
+    height:1000px;
+    background-color:black;
+}
+
+#encText{ 
+    width:200px;
+    height:15px;
+    border-radius:5px;
+    resize:none;
+    overflow:hidden;
+}
+
+#decText{ 
+    width:200px;
+    height:15px;
+    resize:none;
+    border-radius:5px;
+    overflow:hidden;
+}

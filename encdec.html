@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1280">
-    <title>Typing Tower Defense</title>
+    <title>Encryptor and Decryptor</title>
 </head>
 <body>
     <style>
@@ -49,10 +49,10 @@
     #desc {
         position:absolute;
         color:white;
-        top:620px;
+        top:540px;
         left:50px;
     }
-  #download {
+      #download {
         position:fixed;
         bottom:20px;
         right:340px;
@@ -99,20 +99,20 @@
     }
 
 </style>
-<a href="Projects/Previews/Typing Tower Defense/game.html" target="_blank">
+<a href="Projects/Previews/Encryptor and Decryptor/index.html" target="_blank">
 <button id="preview">Preview</button>
 </a>
-<a href="Projects/Downloads/Typing Tower Defense.zip" download>
+<a href="Projects/Downloads/Encryptor and Decryptor.zip" download>
    <button id="download"></button>
 </a>
    <button id="back" class="fixed-button" onclick="location.href='index.html'">Return Home</button>
-    <img src="Resources/Project Images/ttd.png" style="position:absolute; left: 50px; width: 70%; height: auto; display: block; padding-top: 100px;">
-    <h1 id="title">Typing Tower Defense</h1>
-<h2 id="desc"><br><br>
-    This is a simple game I made, where you type words to destroy the enemies attacking you. This was made in JavaScript, HTML and CSS. This game is simple, easy and fun!<br><br>
-  <br><br><br><br>
+    <img src="Resources/Project Images/encdec.png" style="position:absolute; left: 50px; width: 70%; height: auto; display: block; padding-top: 100px;">
+    <h1 id="title">Clicker Game</h1>
+<h2 id="desc">
+This is a simple HTML, CSS and JavaScript project that allows users to encrypt and decrypt text using a password. The encryption is done using a basic algorithm, and the decrypted text can be viewed after entering the correct password. The project includes a user-friendly interface with input fields for text and passwords, buttons for submitting and copying results, and displays for encrypted and decrypted text. <br><br>
+All you need to do is enter the text you want to encrypt, provide a password that will be used to later decrypt the text, and click the "Submit and Encrypt" button. Then you can copy the encrypted text and send it to anyone you need. <br><br><br><br> 
 </h2>
-<script>
+    <script>
 function checkOrientation() {
   if (window.innerHeight > window.innerWidth) {
     alert("Please rotate your device to landscape mode.");
@@ -122,5 +122,6 @@ function checkOrientation() {
 window.addEventListener("load", checkOrientation);
 window.addEventListener("resize", checkOrientation);
 </script>
+
 </body> 
 </html>

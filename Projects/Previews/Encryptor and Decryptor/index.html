@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>Encryptor and Decryptor</title>
+</head>
+<body>
+    <script src="script.js"></script>
+<div id="encryptor">
+    <h1>Encryptor</h1> <br>
+    <input type="text" id="tbe" placeholder="Text to Encrypt" style="border-radius:5px;"/> <br> 
+    <input type="text" id="psw" placeholder="Encryption Password" style="border-radius:5px;"/> <br><br>
+    <button onclick="saveInput()" style="border-radius:5px;" id="submit">Submit and Encrypt</button> 
+    <h2 id="encResult">
+<h3>Encrypted Text:</h3>
+<textarea id="encText" rows="4" cols="50" readonly></textarea><br><br>
+<button onclick="copyText('encText')" style="border-radius:5px;" id="copyenc">Copy Encrypted Text</button>
+</div>
+<br>
+<div id="decryptor">
+    <h1>Decryptor</h1> <br>
+    <input type="text" id="tbd" placeholder="Text to Decrypt" style="border-radius:5px;"/> <br> 
+    <input type="text" id="psw2" placeholder="Decryption Password" style="border-radius:5px;"/> <br><br>
+    <button onclick="decrypt()" style="border-radius:5px;" id="submitdec">Submit and Decrypt</button> 
+<h3>Decrypted Text:</h3>
+<textarea id="decText" rows="4" cols="50" readonly></textarea><br><br>
+<button onclick="copyText('decText')" style="border-radius:5px;" id="copydec">Copy Decrypted Text</button>
+</div>
+<object id="line"></object>
+</body>
+</html>

@@ -6,7 +6,12 @@
   body {
     margin: 0;
     background: #222;
+    overflow-x: hidden;
   }
+
+html {
+    overflow-x: hidden;
+}
 
 #title {
   color: white;

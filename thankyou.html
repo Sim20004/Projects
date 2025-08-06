@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>Subscribe</title>
+</head>
+<body>
+      <h1 id="title">Thank you!</h2>
+        
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+    body {
+        margin: 0;
+        background: #222;
+    }
+
+    #title {
+        position:absolute;
+        left:300px;
+        font-size:100px;
+        color:white;
+    }
+
+
+
+    .fixed-button {
+        position: fixed;
+        top: 300px;
+        right: 520px;
+        padding: 10px 15px;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        height:100px;
+        width:300px;
+        font-size:38px;
+        z-index:100;
+        transition:0.2s;
+    }
+
+   #back:hover {
+        scale:0.9;
+        transition:0.2s;
+    }
+
+    </style>
+       
+       <button id="back" class="fixed-button" onclick="location.href='index.html'">Return Home</button>
+    
+    <script>
+function checkOrientation() {
+  if (window.innerHeight > window.innerWidth) {
+    alert("Please rotate your device to landscape mode.");
+  }
+}
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+</script>
+
+</body>
+</html>

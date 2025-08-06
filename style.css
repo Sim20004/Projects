@@ -40,6 +40,26 @@
   gap: 10px;
   justify-content: center;
 }
+    .fixed-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        height:50px;
+        width:150px;
+        font-size:19px;
+        z-index:100;
+        transition:0.2s;
+    }
+
+   #subscribe:hover {
+        scale:0.9;
+        transition:0.2s;
+    }
 
 
 .item {

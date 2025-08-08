@@ -1,4 +1,13 @@
 export default async function handler(req, res) {
+  if (req.method === "OPTIONS") {
+    // Handle preflight request
+    res.setHeader("Access-Control-Allow-Origin", "https://simarpreetsingh.org");
+    res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.status(204).end();
+    return;
+  }
+
   const body = await req.json();
 
   const response = await fetch(
@@ -14,5 +23,10 @@ export default async function handler(req, res) {
   );
 
   const data = await response.json();
+
+  res.setHeader("Access-Control-Allow-Origin", "https://simarpreetsingh.org");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+
   res.status(200).json(data);
 }

@@ -25,6 +25,11 @@ html {
   position: relative;
 }
 
+#donate:hover {
+  transition:0.2s
+  transform:scale(0.9);
+}
+
 #desc {
   color: white;
   font-weight: 400;

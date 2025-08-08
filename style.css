@@ -26,8 +26,8 @@ html {
 }
 
 #donate {
-    font-size: 20px;
     position: fixed;
+    font-size: 20px;
     bottom: 90px;
     right: 20px;
     background-color: white;

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="prompt" placeholder="Type your question..."></textarea>
+<button onclick="ask()">Send</button>
+<pre id="response"></pre>
+
+<script>
+async function ask() {
+  const prompt = document.getElementById("prompt").value;
+  const res = await fetch("https://your-vercel-project.vercel.app/api/ai", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ prompt }),
+  });
+  const data = await res.json();
+  document.getElementById("response").innerText = data[0]?.generated_text || "No response";
+}
+</script>
+
+</body>
+</html>

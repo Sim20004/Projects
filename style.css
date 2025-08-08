@@ -38,7 +38,7 @@ html {
 }
 
 #donate:hover {
-  transition:0.2s
+  transition:0.2s;
   transform:scale(0.9);
 }
 

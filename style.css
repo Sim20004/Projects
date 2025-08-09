@@ -11,7 +11,7 @@
 
 html {
     overflow-x: hidden;
-}
+} 
 
 #title {
   color: white;
@@ -39,6 +39,24 @@ html {
 }
 
 #donate:hover {
+  transform:scale(0.9);
+  transition:0.2s;
+}
+
+#blog {
+    position: fixed;
+    font-size: 19px;
+    bottom: 160px;
+    right: 20px;
+    background-color: white;
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    z-index:100;
+    transition:0.2s;
+}
+
+#blog:hover {
   transform:scale(0.9);
   transition:0.2s;
 }
